@@ -1,20 +1,26 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 import './Contact.css'
 
-const Contact = ({ toast }) => {
+const Contact = () => {
     const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const form = useRef();
 
     const sendEmail = (e) => {
+        const showToastMessage = () => {
+            toast.success('Message Sent!');
+        };
+
         e.preventDefault();
     
         emailjs.sendForm('service_gi5r5jf', 'template_1b196cr', form.current, 'j9JfcfAAsgwDFQwDH')
             .then((result) => {
                 console.log(result.text);
                 console.log('message sent');
+                showToastMessage()
             }, (error) => {
                 console.log(error.text);
             });
@@ -49,7 +55,7 @@ const Contact = ({ toast }) => {
                     value={message}
                     onChange={(event) => setMessage(event.target.value)}
                 />
-                <input type="submit" value="Send Message" onClick={toast}/>
+                <input type="submit" value="Send Message"/>
             </form>
         </div>
     );

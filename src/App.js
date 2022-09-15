@@ -4,15 +4,11 @@ import Work from './sections/Work';
 import About from './sections/About';
 import Skills from './sections/Skills';
 import Contact from './sections/Contact';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const showToastMessage = () => {
-    toast.success('Message Sent!');
-  };
-
   return (
     <div className="App">
       <NavBar />
@@ -20,7 +16,7 @@ function App() {
       <Work />
       <About />
       <Skills />
-      <Contact toast={showToastMessage} />
+      <Contact />
       <ToastContainer
         position="top-right"
         autoClose={3000}
@@ -28,7 +24,7 @@ function App() {
         newestOnTop={false}
         closeOnClick
         rtl={false}
-        pauseOnFocusLoss
+        pauseOnFocusLoss={false}
         draggable
         pauseOnHover
       />
