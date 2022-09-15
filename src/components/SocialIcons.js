@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub, FaGit } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import './SocialIcons.css';
