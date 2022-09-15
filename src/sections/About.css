@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
+
+.About {
+    /* background-color: #282c34; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #495867;
+}
+
+.header {
+    font-family: 'Eczar', serif;
+    font-weight: 700;
+}
