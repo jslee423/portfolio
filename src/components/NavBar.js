@@ -19,19 +19,19 @@ const NavBar = () => {
             <Collapse isOpen={menuOpen} navbar>
                 <Nav navbar className='m-auto'>
                     <NavItem>
-                        <NavLink href='/'>Home</NavLink>
+                        <NavLink className='NavLink' href='/'>Home</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href='/'>Work</NavLink>
+                        <NavLink className='NavLink' href='/'>Work</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href='/'>About</NavLink>
+                        <NavLink className='NavLink' href='/'>About</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href='/'>Skills</NavLink>
+                        <NavLink className='NavLink' href='/'>Skills</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href='/'>Contact</NavLink>
+                        <NavLink className='NavLink' href='/'>Contact</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>

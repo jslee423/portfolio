@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css'
 
-const Contact = () => {
+const Contact = ({ toast }) => {
     const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -45,11 +45,11 @@ const Contact = () => {
                 <label>Message</label>
                 <textarea
                     name="message"
-                    rows='5'
+                    rows='7'
                     value={message}
                     onChange={(event) => setMessage(event.target.value)}
                 />
-                <input type="submit" value="Send Message" />
+                <input type="submit" value="Send Message" onClick={toast}/>
             </form>
         </div>
     );

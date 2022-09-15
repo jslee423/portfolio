@@ -12,5 +12,15 @@
 }
 
 .icon:hover {
-    background-color: #e2efff;
+    background-color: #6e44ff;
+    color: '#ffff';
+}
+
+.react-icons {
+    color: #495867;
+    font-size: 20px;
+}
+
+.icon:hover .react-icons {
+    color: #ffff
 }
