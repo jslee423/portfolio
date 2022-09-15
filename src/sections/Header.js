@@ -1,5 +1,3 @@
-import { Col, Row } from "reactstrap";
-import self from '../assets/images/self_pic.jpeg';
 import SocialIcons from "../components/SocialIcons";
 import './Header.css'
 
