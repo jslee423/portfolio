@@ -5,31 +5,31 @@ import About from './sections/About';
 import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 import { ToastContainer } from 'react-toastify';
-import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
+import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      <Header />
-      <Work />
-      <About />
-      <Skills />
-      <Contact />
-      <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        hideProgressBar
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss={false}
-        draggable
-        pauseOnHover
-      />
-    </div>
-  );
+    return (
+        <div className="App">
+            <NavBar />
+            <Header />
+            <Work />
+            <About />
+            <Skills />
+            <Contact />
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss={false}
+                draggable
+                pauseOnHover
+            />
+      </div>
+    );
 }
 
 export default App;

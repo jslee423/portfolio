@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 .Contact {
-    /* background-color: #282c34; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -38,10 +37,6 @@ input {
     font-size: 18px;
 }
 
-/* .input:focus {
-    border: 2px solid black;
-} */
-
 textarea {
     width: 100%;
     border: 1px solid rgb(178, 178, 178);
@@ -67,4 +62,18 @@ input[type='submit'] {
 label {
     font-size: 20px;
     margin-top: 10px;
+}
+
+@media(max-width: 400px) {
+    form {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 70%;
+    }    
+}
+
+input[type='submit'] {
+    width: 50%;
 }

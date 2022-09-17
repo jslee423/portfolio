@@ -1,26 +1,49 @@
 .icon {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     /* border: 1px solid; */
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     box-shadow: 5px 5px 5px #b8c2cd;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: fixed; */
 }
 
 .icon:hover {
     background-color: #6e44ff;
     color: '#ffff';
+    transform: scale(1.1);
+    transition-duration: 800ms;
 }
 
 .react-icons {
     color: #495867;
     font-size: 20px;
+    align-self: center;
 }
 
 .icon:hover .react-icons {
-    color: #ffff
+    color: #ffff;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 400px) {
+    .icon {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    .react-icons {
+        font-size: 18px;
+    }
 }

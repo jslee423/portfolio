@@ -11,7 +11,16 @@
     /* color: white; */
 }
 
-.header {
+.SkillHeader {
     font-family: 'Eczar', serif;
     font-weight: 700;
+    color: #ffff;
+}
+
+.skillsRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
 }
