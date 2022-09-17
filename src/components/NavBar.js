@@ -6,6 +6,11 @@ const NavBar = () => {
     const [elemH, setElemH] = useState();
     const [elemW, setElemW] = useState();
     const [toggleBtn, setToggleBtn] = useState();
+    const [open, setOpen] = useState(true);
+
+    let scale = undefined;
+    let offsetX = undefined;
+    let offsetY = undefined;
 
     const navBg = useRef(null);
     const toggleButton = useRef(null);
@@ -17,11 +22,6 @@ const NavBar = () => {
         setToggleBtn(toggleButton.current);
     }, []);
 
-    let open = false;
-    let scale = undefined;
-    let offsetX = undefined;
-    let offsetY = undefined;
-
     const calculateValues = () => {
         const width = window.innerWidth;
         const height = window.innerHeight;
@@ -32,8 +32,6 @@ const NavBar = () => {
         //  Offsets to center the circle
         offsetX = (width / 2 - elemW / 2 - offsetValue) * -1;
         offsetY = height / 2 - elemH / 2 - offsetValue;
-        console.log('offsetx', offsetX);
-        console.log('offsety', offsetY);
 
         // Good old pythagoras
         var radius = Math.sqrt(Math.pow(height, 2) + Math.pow(width, 2));
@@ -45,34 +43,37 @@ const NavBar = () => {
         elem.style.setProperty("--translate-x", offsetX + 'px');
         elem.style.setProperty("--translate-y", offsetY + 'px');
         elem.style.setProperty("--scale", scale);
-      };
-      const closeMenu =  () => {
+    };
+
+    const closeMenu =  () => {
         elem.style.setProperty("--scale", 1);
         elem.style.setProperty("--translate-x", 0);
         elem.style.setProperty("--translate-y", 0);
-      };
-      const animateMenu = () => {
-        open ? openMenu() : closeMenu();
-      };
+    };
       
-      const toggleMenu = () => {
-        open = !open;
+    const animateMenu = () => {
+        open ? openMenu() : closeMenu();
+    };
+      
+    const toggleMenu = () => {
+        // open = !open;
+        setOpen(!open);
         animateMenu();
         toggleBtn.classList.toggle('shown');
-      };
+    };
       
-      const resizeHandler = () => {
+    const resizeHandler = () => {
         window.requestAnimationFrame(function () {
-          calculateValues();
-          animateMenu();
+            calculateValues();
+            // animateMenu();
         });
-      };
+    };
       
-      calculateValues();
+    calculateValues();
       
-    //   //toggleBtn.onclick = toggleMenu;
+    //   toggleBtn.onclick = toggleMenu;
     //   toggleBtn.addEventListener('click', toggleMenu, false);
-      window.addEventListener("resize", resizeHandler, false);
+    window.addEventListener("resize", resizeHandler, false);
     
 
     return (
@@ -86,9 +87,10 @@ const NavBar = () => {
 
             <nav>
                 <ul>
-                    <li><a className="link" href="#0">projects</a></li>
+                    <li><a className="link" href="/">home</a></li>
+                    <li><a className="link" href="projects">projects</a></li>
                     <li><a className="link" href="#0">about</a></li>
-                    <li><a className="link" href="#0">contact</a></li>
+                    <li><a className="link" href="#Contact" onClick={toggleMenu}>contact</a></li>
                 </ul>
             </nav>
         </>
