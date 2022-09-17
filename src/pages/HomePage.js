@@ -1,4 +1,3 @@
-import NavBar from '../components/NavBar';
 import Header from '../sections/Header';
 import Work from '../sections/Work';
 import About from '../sections/About';
@@ -10,7 +9,6 @@ import './HomePage.css';
 const HomePage = () => {
     return (
         <div className='homePage'>
-            {/* <NavBar /> */}
                 <Header />
                 <Work />
                 <About />

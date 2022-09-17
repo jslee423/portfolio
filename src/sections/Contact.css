@@ -52,11 +52,17 @@ input[type='submit'] {
     margin-top: 2rem;
     font-size: 17px;
     height: 45px;
-    width: 30%;
+    width: 40%;
     align-self: center;
     font-family: '';
     color: white;
     font-family: 'Roboto', sans-serif;
+}
+
+input[type='submit']:hover {
+    background-color: #5123f8;
+    transform: scale(1.05);
+    transition-duration: 300ms;
 }
 
 label {
@@ -70,10 +76,10 @@ label {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        width: 70%;
-    }    
-}
+        width: 80%;
+    }
 
-input[type='submit'] {
-    width: 50%;
+    input[type='submit'] {
+        width: 50%;
+    }
 }

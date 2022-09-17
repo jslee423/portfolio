@@ -30,8 +30,8 @@ const NavBar = () => {
         const offsetValue = Number(30);
 
         //  Offsets to center the circle
-        offsetX = (width / 2 - elemW / 2 - offsetValue) * -1;
-        offsetY = height / 2 - elemH / 2 - offsetValue;
+        offsetX = (width / 2 - elemW / 2 - offsetValue);
+        offsetY = (height / 2 - elemH / 2 - offsetValue);
 
         // Good old pythagoras
         var radius = Math.sqrt(Math.pow(height, 2) + Math.pow(width, 2));
@@ -40,8 +40,8 @@ const NavBar = () => {
     };
 
     const openMenu = () => {
-        elem.style.setProperty("--translate-x", offsetX + 'px');
-        elem.style.setProperty("--translate-y", offsetY + 'px');
+        elem.style.setProperty("--translate-x", '-' + offsetX + 'px');
+        elem.style.setProperty("--translate-y", '-' + offsetY + 'px');
         elem.style.setProperty("--scale", scale);
     };
 
@@ -88,8 +88,8 @@ const NavBar = () => {
             <nav>
                 <ul>
                     <li><a className="link" href="/">home</a></li>
-                    <li><a className="link" href="projects">projects</a></li>
                     <li><a className="link" href="#0">about</a></li>
+                    <li><a className="link" href="projects">projects</a></li>
                     <li><a className="link" href="#Contact" onClick={toggleMenu}>contact</a></li>
                 </ul>
             </nav>
