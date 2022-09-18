@@ -1,6 +1,6 @@
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill, BsFileEarmarkPerson } from 'react-icons/bs';
+import { BsFileEarmarkPerson } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
 import './SocialIcons.css';
 
