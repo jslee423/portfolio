@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+import resume from '../assets/resume.pdf';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -7,6 +9,7 @@ const NavBar = () => {
     const [elemW, setElemW] = useState();
     const [toggleBtn, setToggleBtn] = useState();
     const [open, setOpen] = useState(true);
+    const location = useLocation();
 
     let scale = undefined;
     let offsetX = undefined;
@@ -87,10 +90,19 @@ const NavBar = () => {
 
             <nav>
                 <ul>
-                    <li><a className="link" href="/">home</a></li>
-                    <li><a className="link" href="#0">about</a></li>
+                    <li><a
+                        className="link"
+                        href={
+                            location.pathname === '/'
+                            && (location.hash === '' || location.hash === "#Contact" || location.hash === "#")
+                            ? "#" : "/" }
+                        onClick={toggleMenu}
+                    >
+                        home
+                    </a></li>
                     <li><a className="link" href="projects">projects</a></li>
                     <li><a className="link" href="#Contact" onClick={toggleMenu}>contact</a></li>
+                    <li><a className="link" href={resume} target='_blank' rel='noreferrer'>resume</a></li>
                 </ul>
             </nav>
         </>

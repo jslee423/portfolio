@@ -1,10 +1,11 @@
 import SkillsIcons from '../components/SkillsIcons';
+import Wave from '../components/Wave';
 import './Skills.css';
 
 const Skills = () => {
     return (
         <div className='Skills'>
-            <h1 className='SkillHeader mb-5'>skills</h1>
+            <h1 className='SkillHeader mb-5'>skills & experience</h1>
             <div className='skillList'>
                 <div className='skillsRow mb-3'>
                     <SkillsIcons img='html' />
@@ -19,6 +20,7 @@ const Skills = () => {
                     <SkillsIcons img='mongo' />
                 </div>
             </div>
+            <Wave rev />
         </div>
     );
 };

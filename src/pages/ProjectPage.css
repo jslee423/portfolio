@@ -1,6 +1,19 @@
-.projectPage {
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+.projects {
+    /* min-height: 100vh; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #495867;
     position: relative;
-    height: 100vh;
-      width: 100%;
+}
+
+.projectHeader {
+    font-family: 'Eczar', serif;
+    font-weight: 700;
 }

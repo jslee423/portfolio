@@ -1,6 +1,6 @@
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsFillPersonLinesFill, BsFileEarmarkPerson } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
 import './SocialIcons.css';
 
@@ -15,7 +15,7 @@ const SocialIcons = ({ link, icon }) => {
         iconTag = <AiOutlineMail />
         target = false;
     } else if (icon === 'resume') {
-        iconTag = <BsFillPersonLinesFill />
+        iconTag = <BsFileEarmarkPerson />
     }
 
     return (

@@ -1,5 +1,6 @@
 import SocialIcons from "../components/SocialIcons";
 import resume from '../assets/resume.pdf'
+import Wave from "../components/Wave";
 import './Header.css'
 
 const Header = () => {
@@ -17,6 +18,8 @@ const Header = () => {
                 <SocialIcons link='#Contact' icon='mail' />
                 <SocialIcons link={resume} icon='resume' />
             </div>
+            <Wave color top />
+            <Wave color rev />
         </div>
     );
 };

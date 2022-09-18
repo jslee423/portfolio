@@ -1,0 +1,35 @@
+:root {
+    --height: 20px;
+    --heightSm: 10px;
+    --heightHigh: 40px;
+    --heightSmHigh: 20px;
+}
+
+.wave {
+    width: 100%;
+    height: var(--heightHigh);
+    position: absolute; 
+    bottom: 0;
+    /* transform: scaleX(-1); */
+}
+
+.waveRev {
+    transform: scaleX(-1);
+    height: var(--height);
+}
+
+.waveTop {
+    top: 0;
+    transform: scaleY(-1);
+}
+
+@media(max-width: 400px) {
+    .wave {
+        /* height: (var(--height) / 2); */
+        height: var(--heightSmHigh);
+    }
+
+    .waveRev {
+        height: var(--heightSm);
+    }
+}

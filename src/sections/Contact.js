@@ -1,26 +1,50 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import Wave from '../components/Wave';
 import './Contact.css'
 
 const Contact = () => {
     const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    // const [errMsg, setErrMsg] = useState('');
     const form = useRef();
+    let errMsg = '';
 
     const sendEmail = (e) => {
         const showToastMessage = () => {
             toast.success('Message Sent!');
         };
 
+        const showFailedToastMessage = () => {
+            toast.error(errMsg);
+        };
+
         e.preventDefault();
+
+        if (userName === '' ) {
+            // setErrMsg('Please enter your name!');
+            errMsg = 'Please enter your name!'
+            showFailedToastMessage();
+            return;
+        } else if (email === '') {
+            // setErrMsg('Please enter your email!');
+            errMsg = 'Please enter your email!'
+            showFailedToastMessage();
+            return;
+        } else if (message === '') {
+            // setErrMsg('Please enter a message!');
+            errMsg = 'Please enter a message!'
+            showFailedToastMessage();
+            return;
+        }
     
         emailjs.sendForm('service_gi5r5jf', 'template_1b196cr', form.current, 'j9JfcfAAsgwDFQwDH')
             .then((result) => {
                 console.log(result.text);
                 console.log('message sent');
-                showToastMessage()
+                showToastMessage();
             }, (error) => {
                 console.log(error.text);
             });
@@ -32,7 +56,7 @@ const Contact = () => {
 
     return (
         <div className='Contact' id='Contact'>
-            <h1 className='header mb-4'>contact</h1>
+            <h1 className='header mb-4'>lets connect!</h1>
             <form ref={form} onSubmit={sendEmail}>
                 <label>Name</label>
                 <input
@@ -57,6 +81,7 @@ const Contact = () => {
                 />
                 <input type="submit" value="Send Message"/>
             </form>
+            <Wave color/>
         </div>
     );
 };
