@@ -1,15 +1,13 @@
 .icon {
     margin-left: 15px;
     margin-right: 15px;
-    /* border: 1px solid; */
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    box-shadow: 5px 5px 5px #b8c2cd;
+    box-shadow: 5px 5px 9px #b8c2cd;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
 }
 
 .icon:hover {
@@ -29,7 +27,7 @@
     color: #ffff;
 }
 
-a {
+.iconAnchor {
     width: 100%;
     height: 100%;
     display: flex;

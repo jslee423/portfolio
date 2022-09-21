@@ -21,13 +21,13 @@ const SocialIcons = ({ link, icon }) => {
     return (
         <div className='icon'>
             {!target ?
-                <a href={link}>
+                <a href={link} className='iconAnchor'>
                     <IconContext.Provider value={{ className: 'react-icons' }}>
                         {iconTag}
                     </IconContext.Provider>
                 </a>
             :
-                <a href={link} target='_blank' rel='noreferrer'>
+                <a href={link} target='_blank' rel='noreferrer' className='iconAnchor'>
                     <IconContext.Provider value={{ className: 'react-icons' }}>
                         {iconTag}
                     </IconContext.Provider>

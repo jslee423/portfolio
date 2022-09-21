@@ -9,14 +9,15 @@ const NavBar = () => {
     const [elemW, setElemW] = useState();
     const [toggleBtn, setToggleBtn] = useState();
     const [open, setOpen] = useState(true);
+    // const [scale, setScale] = useState(undefined);
     const location = useLocation();
 
     let scale = undefined;
     let offsetX = undefined;
     let offsetY = undefined;
 
-    const navBg = useRef(null);
-    const toggleButton = useRef(null);
+    const navBg = useRef();
+    const toggleButton = useRef();
 
     useEffect(() => {
         setElem(navBg.current);
@@ -101,7 +102,7 @@ const NavBar = () => {
                         home
                     </a></li>
                     <li><a className="link" href="projects">projects</a></li>
-                    <li><a className="link" href="#Contact" onClick={toggleMenu}>contact</a></li>
+                    {/* <li><a className="link" href="#Contact" onClick={toggleMenu}>contact</a></li> */}
                     <li><a className="link" href={resume} target='_blank' rel='noreferrer'>resume</a></li>
                 </ul>
             </nav>

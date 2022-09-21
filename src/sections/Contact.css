@@ -12,6 +12,59 @@
     position: relative;
 }
 
+.contactInfo {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.contactSec {
+    border-radius: 10px;
+    min-width: 230px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailSec {
+    background-color: #4300b8;
+}
+
+.phoneSec {
+    background-color: #38b6ff;
+}
+
+.contact-text {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.contact-text:hover {
+    color: #ffff;
+}
+
+.contact-text p {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.emailIcon {
+    width: 25px;
+    height: 25px;
+}
+
 .header {
     font-family: 'Eczar', serif;
     font-weight: 700;
@@ -22,14 +75,14 @@ form {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
 }
 
 label {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 input {
@@ -65,8 +118,8 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover {
-    background-color: #0B58CA;
-    transform: scale(1.05);
+    background-color: #4300b8;
+    /* transform: scale(1.05); */
     transition-duration: 300ms;
 }
 
@@ -80,10 +133,33 @@ input[type='submit']:hover {
     }
 
     input[type='submit'] {
-        width: 50%;
+        width: 60%;
     }
 
     label {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .contactInfo {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .contactSec {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%
+    }
+}
+
+@media(min-width: 401px) and (max-width: 1100px) {
+    form {
+        width: 60%;
+    }
+    .contactInfo {
+        width: 60%;
+    }
+    .contactSec {
+        width: 40%
     }
 }

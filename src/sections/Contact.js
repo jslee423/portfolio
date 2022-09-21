@@ -2,13 +2,14 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import Wave from '../components/Wave';
+import emailIcon from '../assets/images/email.png';
+import phoneIcon from '../assets/images/smartphone.png';
 import './Contact.css'
 
 const Contact = () => {
     const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    // const [errMsg, setErrMsg] = useState('');
     const form = useRef();
     let errMsg = '';
 
@@ -24,17 +25,14 @@ const Contact = () => {
         e.preventDefault();
 
         if (userName === '' ) {
-            // setErrMsg('Please enter your name!');
             errMsg = 'Please enter your name!'
             showFailedToastMessage();
             return;
         } else if (email === '') {
-            // setErrMsg('Please enter your email!');
             errMsg = 'Please enter your email!'
             showFailedToastMessage();
             return;
         } else if (message === '') {
-            // setErrMsg('Please enter a message!');
             errMsg = 'Please enter a message!'
             showFailedToastMessage();
             return;
@@ -57,6 +55,20 @@ const Contact = () => {
     return (
         <div className='Contact' id='Contact'>
             <h1 className='header mb-4'>lets connect!</h1>
+            <div className='contactInfo'>
+                <div className='contactSec emailSec'>
+                    <a href="mailto:jslee423@gmail.com" className="contact-text">
+                        <img src={emailIcon} alt='email icon' className='emailIcon' />
+                        <p>jslee423@gmail.com</p>
+                    </a>
+                </div>
+                <div className='contactSec phoneSec'>
+                    <a href="tel:+1 (610) 618-0535" className="contact-text">
+                        <img src={phoneIcon} alt='phone icon' className='emailIcon' />
+                        <p>+1 6106180535</p>
+                    </a>
+                </div>
+            </div>
             <form ref={form} onSubmit={sendEmail}>
                 <label>Name</label>
                 <input
@@ -75,7 +87,7 @@ const Contact = () => {
                 <label>Message</label>
                 <textarea
                     name="message"
-                    rows='7'
+                    rows='5'
                     value={message}
                     onChange={(event) => setMessage(event.target.value)}
                 />

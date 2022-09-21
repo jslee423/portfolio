@@ -4,20 +4,19 @@
 .skillsIcon {
     margin-left: 15px;
     margin-right: 15px;
-    /* border: 1px solid; */
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    box-shadow: 5px 5px 5px #3b14c8;
+    /* box-shadow: 5px 5px 5px #3b14c8; */
+    box-shadow: 5px 5px 5px #5D3FD3;
+    /* box-shadow: 5px 5px 5px #4957d7; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffff;
-    /* position: fixed; */
 }
 
 .skillsIcon:hover {
-    /* background-color: #6e44ff; */
     color: '#ffff';
     transform: scale(1.1);
     transition-duration: 800ms;
