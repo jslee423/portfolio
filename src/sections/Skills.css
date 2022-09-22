@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 .Skills {
     background-color: #6e44ff;
@@ -25,3 +26,170 @@
     /* align-items: center; */
     justify-content: center;
 }
+
+.skillsExp {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.expList {
+    margin-left: 5%;
+}
+
+.expItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.expHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.expYear {
+
+    font-family: 'Roboto', sans-serif;
+    color: #38b6ff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.expName {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.expTitle {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    font-size: 16px;
+}
+
+.resumeBtn {
+    font-family: 'Roboto', sans-serif;
+    background-color: #38b6ff;
+    color: #ffff;
+    border-style: none;
+    /* border-radius: 10px; */
+    font-size: 18px;
+    height: 45px;
+    width: 120px;
+    font-weight: 700;
+}
+
+.resumeBtn:hover {
+    background-color: #4300b8;
+    transition-duration: 300ms;
+}
+
+@media(max-width: 900px) {
+    .skillsExp {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .expList {
+        margin-top: 20px;
+    }
+
+    .expTitle {
+        font-size: 14px;
+    }
+}
+
+
+
+/* .skillsList {
+    width: 50%;
+}
+
+.expList {
+    width: 50%;
+}
+
+.expItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.expHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.expYear {
+
+    font-family: 'Roboto', sans-serif;
+    color: #38b6ff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.expName {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.expTitle {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    font-size: 16px;
+} */
+
+
+/* .expHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.expYear {
+
+    font-family: 'Roboto', sans-serif;
+    color: #38b6ff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.expName {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.expTitle {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    font-size: 16px;
+}
+
+.expItem {
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 900px) {
+    .skillsExp {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .expList {
+        margin-top: 20px;
+    }
+} */

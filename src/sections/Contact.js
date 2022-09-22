@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import Wave from '../components/Wave';
-import emailIcon from '../assets/images/email.png';
+import emailIcon from '../assets/images/gmail.png';
 import phoneIcon from '../assets/images/smartphone.png';
 import './Contact.css'
 
@@ -55,16 +55,16 @@ const Contact = () => {
     return (
         <div className='Contact' id='Contact'>
             <h1 className='header mb-4'>lets connect!</h1>
-            <div className='contactInfo'>
+            <div className='contactInfo my-4'>
                 <div className='contactSec emailSec'>
                     <a href="mailto:jslee423@gmail.com" className="contact-text">
-                        <img src={emailIcon} alt='email icon' className='emailIcon' />
+                        <img src={emailIcon} alt='email icon' className='contactIcon' />
                         <p>jslee423@gmail.com</p>
                     </a>
                 </div>
                 <div className='contactSec phoneSec'>
                     <a href="tel:+1 (610) 618-0535" className="contact-text">
-                        <img src={phoneIcon} alt='phone icon' className='emailIcon' />
+                        <img src={phoneIcon} alt='phone icon' className='contactIcon' />
                         <p>+1 6106180535</p>
                     </a>
                 </div>
