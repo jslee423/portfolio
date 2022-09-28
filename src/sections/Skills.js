@@ -12,6 +12,7 @@ import sqlImg from '../assets/images/sql.png';
 import bashImg from '../assets/images/bash.png';
 import gitImg from '../assets/images/git.png';
 import resume from '../assets/resume.pdf';
+import expressImg from '../assets/images/Expressjs.png';
 import './Skills.css';
 
 const Skills = () => {
@@ -24,33 +25,30 @@ const Skills = () => {
                         <SkillsIcons img={html5Img} label='HTML' />
                         <SkillsIcons img={css3Img} label='CSS' />
                         <SkillsIcons img={jsImg} label='JS' />
+                        <SkillsIcons img={bootstrapImg} label='BOOTSTRAP' />
                     </div>
                     <div className='skillsRow mb-3'>
-                        <SkillsIcons img={bootstrapImg} label='BOOTSTRAP' />
                         <SkillsIcons img={reactImg} label='REACT JS' />
                         <SkillsIcons img={reactnatImg} label='NATIVE' />
-                        
+                        <SkillsIcons img={nodeImg} label='NODE JS' />
+                        <SkillsIcons img={expressImg} label='EXPRESS JS' />
                     </div>
                     <div className='skillsRow mb-3'>
-                    <SkillsIcons img={nodeImg} label='NODE JS' />
                         <SkillsIcons img={mongoImg} label='MONGO DB' />
-                        <SkillsIcons img={sqlImg} label='SQL' />
-
-                    </div>
-                    <div className='skillsRow'>
+                        <SkillsIcons img={sqlImg} label='T-SQL' />
                         <SkillsIcons img={bashImg} label='BASH' />
                         <SkillsIcons img={gitImg} label='GIT' />
                     </div>
                 </div>
                 <div className='expList'>
-                    <div className='expItem mb-5'>
+                    <div className='expItem mb-3'>
                         <p className='expYear'>2022</p>
                         <div className='expHeader'>
                             <h4 className='expName'>Nucamp Coding Bootcamp</h4>
                             <p className='expTitle'>Full Stack Web & Mobile Development</p>
                         </div>
                     </div>
-                    <div className='expItem mb-5'>
+                    <div className='expItem mb-3'>
                         <p className='expYear'>2020</p>
                         <div className='expHeader'>
                             <h4 className='expName'>Credit Agricole CIB</h4>
@@ -65,7 +63,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <a href={resume} target='_blank' rel='noreferrer'>
-                        <button type='button' className='mb-3 resumeBtn'>RESUME</button>
+                        <button type='button' className='mb-3 resumeBtn'>Resume</button>
                     </a>
                 </div>
             </div>
