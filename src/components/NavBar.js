@@ -101,7 +101,7 @@ const NavBar = () => {
                     >
                         home
                     </a></li>
-                    <li><a className="link" href="projects">projects</a></li>
+                    <li><a className="link" href="projects">portfolio</a></li>
                     {/* <li><a className="link" href="#Contact" onClick={toggleMenu}>contact</a></li> */}
                     <li><a className="link" href={resume} target='_blank' rel='noreferrer'>resume</a></li>
                 </ul>
