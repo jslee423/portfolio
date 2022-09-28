@@ -8,8 +8,7 @@
     width: 100px;
     height: 100px;
     /* box-shadow: 5px 5px 5px #3b14c8; */
-    box-shadow: 5px 5px 5px #5D3FD3;
-    /* box-shadow: 5px 5px 5px #4957d7; */
+    /* box-shadow: 5px 5px 5px #5D3FD3; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +23,6 @@
 
 img {
     width: 60%;
-    height: 60%;
     display: flex;
     justify-content: center;
 }
