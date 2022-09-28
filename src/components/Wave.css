@@ -1,8 +1,8 @@
 :root {
     --height: 20px;
-    --heightSm: 10px;
+    --heightSm: 5px;
     --heightHigh: 30px;
-    --heightSmHigh: 20px;
+    --heightSmHigh: 10px;
 }
 
 .wave {
