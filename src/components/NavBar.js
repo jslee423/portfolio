@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import resume from '../assets/resume.pdf';
 import './NavBar.css';
 
@@ -91,19 +91,10 @@ const NavBar = () => {
 
             <nav>
                 <ul>
-                    <li><a
-                        className="link"
-                        href={
-                            location.pathname === '/'
-                            && (location.hash === '' || location.hash === "#Contact" || location.hash === "#")
-                            ? "#" : "/" }
-                        onClick={toggleMenu}
-                    >
-                        home
-                    </a></li>
-                    <li><a className="link" href="projects">portfolio</a></li>
+                    <li><Link to='/' className='link' onClick={toggleMenu}>home</Link></li>
+                    <li><Link to="/projects" className='link' onClick={toggleMenu}>portfolio</Link></li>
                     {/* <li><a className="link" href="#Contact" onClick={toggleMenu}>contact</a></li> */}
-                    <li><a className="link" href={resume} target='_blank' rel='noreferrer'>resume</a></li>
+                    <li><Link to={resume} className='link' target='_blank' rel='noreferrer'>resume</Link></li>
                 </ul>
             </nav>
         </>

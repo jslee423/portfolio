@@ -2,6 +2,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFileEarmarkPerson } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
+import { Link } from 'react-router-dom';
 import './SocialIcons.css';
 
 const SocialIcons = ({ link, icon }) => {
@@ -21,17 +22,17 @@ const SocialIcons = ({ link, icon }) => {
     return (
         <div className='icon'>
             {!target ?
-                <a href={link} className='iconAnchor'>
+                <Link to={link} className='iconAnchor'>
                     <IconContext.Provider value={{ className: 'react-icons' }}>
                         {iconTag}
                     </IconContext.Provider>
-                </a>
+                </Link>
             :
-                <a href={link} target='_blank' rel='noreferrer' className='iconAnchor'>
+                <Link to={link} target='_blank' rel='noreferrer' className='iconAnchor'>
                     <IconContext.Provider value={{ className: 'react-icons' }}>
                         {iconTag}
                     </IconContext.Provider>
-                </a>
+                </Link>
             }
         </div>
     );

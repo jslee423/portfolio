@@ -1,5 +1,5 @@
 import SkillsIcons from '../components/SkillsIcons';
-import Wave from '../components/Wave';
+// import Wave from '../components/Wave';
 import html5Img from '../assets/images/html5.png';
 import css3Img from '../assets/images/css.png';
 import jsImg from '../assets/images/js.png';
@@ -67,7 +67,7 @@ const Skills = () => {
                     </a>
                 </div>
             </div>
-            <Wave rev />
+            {/* <Wave rev /> */}
         </div>
     );
 };

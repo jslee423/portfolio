@@ -17,3 +17,154 @@
     font-weight: 700;
     color: #ffff;
 }
+
+.projectBtn {
+    font-family: 'Roboto', sans-serif;
+    background-color: #38b6ff;
+    color: #ffff;
+    border-style: none;
+    /* border-radius: 10px; */
+    font-size: 17px;
+    height: 45px;
+    width: 120px;
+    font-weight: 700;
+}
+
+.projectBtn:hover {
+    background-color: #4300b8;
+    transition-duration: 300ms;
+}
+
+.projectPreviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.projectGif {
+    height: 250px;
+    width: auto;
+}
+
+#onimortetGif {
+    border-radius: 20px;
+}
+
+#pbjGif {
+    border-radius: 20px;
+}
+
+#cafewalnutGif {
+    border-radius: 10px;
+}
+
+#parleyGif {
+    border-radius: 10px;
+}
+
+#formGif {
+    border-radius: 10px;
+}
+
+.mobileProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileLabel {
+    /* font-family: 'Eczar', serif; */
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    font-weight: 700;
+}
+
+.mobileDesc {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    font-size: 14px;
+    /* width: 60%; */
+}
+
+.projectLinks {
+    text-decoration: none;
+}
+
+.projectLinks:hover {
+    transform: scale(1.1);
+    transition-duration: 800ms;
+}
+
+.rowTwo {
+    margin-top: 30px;
+}
+
+@media(max-width: 400px) {
+    .projectPreviews {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #cafewalnutGif {
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    #parleyGif {
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    #formGif {
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    #onimortetGif {
+        height: 200px;
+    }
+    
+    #pbjGif {
+        height: 200px;
+    }
+
+    .ProjectHeader {
+        margin-top: 30px;
+    }
+
+    .projectBtnA {
+        margin-bottom: 30px;
+    }
+
+    .mobileProject {
+        margin-bottom: 20px;
+    }
+
+    .rowTwo {
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 401px) and (max-width: 1100px) {
+    .ProjectHeader {
+        margin-top: 30px;
+    }
+
+    .projectBtnA {
+        margin-bottom: 30px;
+    }
+
+    .projectPreviews {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 70%;
+    }
+
+    #cafewalnutGif {
+        margin-top: 20px;
+    }
+}

@@ -1,4 +1,4 @@
-import Wave from '../components/Wave';
+// import Wave from '../components/Wave';
 import manOnLaptop from '../assets/images/manOnLaptop.jpg';
 import SocialIcons from '../components/SocialIcons';
 import './About.css';
@@ -17,7 +17,7 @@ const About = () => {
                 </div>
                 <img src={manOnLaptop} alt='man on laptop' className='aboutJpg' />
             </div>
-            <Wave color />
+            {/* <Wave color /> */}
         </div>
     );
 };

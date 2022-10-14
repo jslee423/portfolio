@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
-import Wave from '../components/Wave';
+// import Wave from '../components/Wave';
 import emailIcon from '../assets/images/gmail.png';
 import phoneIcon from '../assets/images/smartphone.png';
 import './Contact.css'
@@ -93,7 +93,7 @@ const Contact = () => {
                 />
                 <input type="submit" value="Send Message"/>
             </form>
-            <Wave color/>
+            {/* <Wave color/> */}
         </div>
     );
 };

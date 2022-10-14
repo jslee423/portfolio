@@ -109,12 +109,13 @@ input[type='submit'] {
     margin-top: 2rem;
     font-size: 17px;
     height: 45px;
-    width: 40%;
+    width: 35%;
     align-self: center;
     font-family: '';
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    border-radius: 0;
 }
 
 input[type='submit']:hover {
