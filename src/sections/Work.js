@@ -45,14 +45,10 @@ const Work = () => {
                     <div className='mobileProject'>
                         <img src={formGenGif} alt='form generator gif' className='projectGif' id='formGif' />
                         <h6 className='mobileLabel mt-2'>MEMBERSHIP FORM GENERATOR</h6>
-                        <p className='mobileDesc'>App to generate membership forms</p>
+                        <p className='mobileDesc'>Reward membership form generator</p>
                     </div>
                 </a>
             </div>
-            {/* <a href='/projects' className='mt-3 projectBtnA'>
-                <button type='button' className='mb-3 projectBtn'>See More</button>
-            </a> */}
-            {/* <Wave /> */}
         </div>
     );
 };

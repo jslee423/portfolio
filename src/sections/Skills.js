@@ -10,9 +10,9 @@ import mongoImg from '../assets/images/mongodb.png';
 import reactnatImg from '../assets/images/reactnative.svg';
 import sqlImg from '../assets/images/sql.png';
 import bashImg from '../assets/images/bash.png';
-import gitImg from '../assets/images/git.png';
 import resume from '../assets/resume.pdf';
 import expressImg from '../assets/images/Expressjs.png';
+import firebaseImg from '../assets/images/firebase.png';
 import './Skills.css';
 
 const Skills = () => {
@@ -37,7 +37,7 @@ const Skills = () => {
                         <SkillsIcons img={mongoImg} label='MONGO DB' />
                         <SkillsIcons img={sqlImg} label='T-SQL' />
                         <SkillsIcons img={bashImg} label='BASH' />
-                        <SkillsIcons img={gitImg} label='GIT' />
+                        <SkillsIcons img={firebaseImg} label='FIREBASE' />
                     </div>
                 </div>
                 <div className='expList'>
