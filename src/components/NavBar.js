@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import resume from '../assets/resume.pdf';
 import './NavBar.css';
 
@@ -9,8 +9,6 @@ const NavBar = () => {
     const [elemW, setElemW] = useState();
     const [toggleBtn, setToggleBtn] = useState();
     const [open, setOpen] = useState(true);
-    // const [scale, setScale] = useState(undefined);
-    const location = useLocation();
 
     let scale = undefined;
     let offsetX = undefined;
