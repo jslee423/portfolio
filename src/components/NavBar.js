@@ -90,8 +90,10 @@ const NavBar = () => {
             <nav>
                 <ul>
                     <li><Link to='/' className='link' onClick={toggleMenu}>home</Link></li>
-                    <li><Link to="/projects" className='link' onClick={toggleMenu}>portfolio</Link></li>
+                    {/* <li><Link to="/projects" className='link' onClick={toggleMenu}>portfolio</Link></li> */}
                     {/* <li><a className="link" href="#Contact" onClick={toggleMenu}>contact</a></li> */}
+                    <li><a href='https://www.linkedin.com/in/jasonlee90/' target='_blank' rel='noreferrer' className='link'>linkedIn</a></li>
+                    <li><a href='https://github.com/jslee423' target='_blank' rel='noreferrer' className='link'>github</a></li>
                     <li><Link to={resume} className='link' target='_blank' rel='noreferrer'>resume</Link></li>
                 </ul>
             </nav>
