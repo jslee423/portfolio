@@ -44,6 +44,10 @@
     width: 70%;
 }
 
+.projectRowTwo {
+    justify-content: center;
+}
+
 .projectGif {
     height: 250px;
     width: auto;
